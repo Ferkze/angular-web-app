@@ -1,0 +1,11 @@
+<div class="container" fxLayout="column" fxLayoutGap="10px">
+	<mat-list fxFlex>
+		<mat-list-item *ngFor="let wine of wines">
+			<img matListAvatar src={{wine.image}} alt={{wine.name}}>
+			<h1 matLine>{{ wine.name }}</h1>
+			<p matLine>
+				<span>{{ wine.description }}</span>
+			</p>
+		</mat-list-item>
+	</mat-list>
+</div>
