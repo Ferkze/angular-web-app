@@ -57,8 +57,6 @@ export class MenuComponent implements OnInit {
 
   wines = WINES;
 
-  selectedWine = WINES[0];
-
   constructor() { }
 
   ngOnInit(): void {
