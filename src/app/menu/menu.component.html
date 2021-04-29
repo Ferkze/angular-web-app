@@ -10,7 +10,7 @@
 		<mat-grid-list cols="2" rowHeight="200px">
 			<mat-grid-tile *ngFor="let wine of wines" (click)="onSelect(wine)">
 				<img height="200px" src={{wine.image}} alt={{wine.name}}>
-				<mat-grid-tile-footer>
+				<mat-grid-tile-footer style="justify-content: center;">
 					<h1>{{ wine.name | uppercase }}</h1>
 				</mat-grid-tile-footer>
 			</mat-grid-tile>

@@ -9,7 +9,9 @@
 						<h3>{{ wine.name | uppercase }}</h3>
 					</mat-card-title>
 				</mat-card-header>
-				<img mat-card-image src={{wine.image}} alt={{wine.name}}>
+				<div class="img-container">
+					<img mat-card-image src={{wine.image}} alt={{wine.name}}>
+				</div>
 				<mat-card-content>
 					<p>{{wine.description}}</p>
 				</mat-card-content>
