@@ -1,3 +1,5 @@
+import { Comment } from "./comment";
+
 export default class Wine {
 	id: string;
 	name: string;
@@ -8,12 +10,6 @@ export default class Wine {
 	price: string;
 	description: string;
 	country: string;
-	comments?: Comment[];
+	comments: Comment[];
 }
 
-class Comment {
-	rating: number;
-	comment: string;
-	author: string;
-	date: string;
-}

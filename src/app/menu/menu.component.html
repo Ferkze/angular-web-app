@@ -8,7 +8,7 @@
 
 	<div fxFlex>
 		<mat-grid-list cols="2" rowHeight="200px">
-			<mat-grid-tile *ngFor="let wine of wines">
+			<mat-grid-tile *ngFor="let wine of wines" (click)="onSelect(wine)">
 				<img height="200px" src={{wine.image}} alt={{wine.name}}>
 				<mat-grid-tile-footer>
 					<h1>{{ wine.name | uppercase }}</h1>
@@ -17,6 +17,6 @@
 		</mat-grid-list>
 	</div>
 
-	<app-wine-details></app-wine-details>
+	<app-wine-details [wine]="selectedWine"></app-wine-details>
 
 </div>
