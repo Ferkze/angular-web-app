@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { WineService } from '../services/wine.service';
 import Wine from '../shared/wine';
-import { WINES } from '../shared/wines';
 
 @Component({
   selector: 'app-menu',
@@ -9,13 +9,14 @@ import { WINES } from '../shared/wines';
 })
 export class MenuComponent implements OnInit {
 
-  wines: Wine[] = WINES;
+  wines: Wine[];
 
   selectedWine: Wine;
 
-  constructor() { }
+  constructor(private wineService: WineService) { }
 
   ngOnInit(): void {
+    this.wines = this.wineService.getWines();
   }
 
   onSelect(wine: Wine) {

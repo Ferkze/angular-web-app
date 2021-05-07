@@ -14,6 +14,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import 'hammerjs';
 import { MenuComponent } from './menu/menu.component';
 import { WineDetailsComponent } from './wine-details/wine-details.component';
+import { WineService } from './services/wine.service';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,9 @@ import { WineDetailsComponent } from './wine-details/wine-details.component';
     MatListModule,
     MatToolbarModule
   ],
-  providers: [],
+  providers: [
+    WineService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

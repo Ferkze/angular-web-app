@@ -24,6 +24,15 @@
 	</div>
 
 	<div fxFlex="40" *ngIf="wine">
+		<h2>Details</h2>
+		<mat-list style="margin-bottom: 16px;">
+			<mat-list-item>
+				<p matLine>Price: {{wine.price | currency}}</p>
+			</mat-list-item>
+			<mat-list-item>
+				<p matLine>Wine type: {{wine.label}}</p>
+			</mat-list-item>
+		</mat-list>
 		<h2>Comments</h2>
 		<mat-list>
 			<mat-list-item *ngFor="let comment of wine.comments">

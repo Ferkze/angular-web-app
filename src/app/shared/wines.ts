@@ -136,7 +136,7 @@ export const WINES: Wine[] = [
     image: '/assets/images/fre-chadornnay.jpg',
     category: 'dessert',
     featured: false,
-    label: '',
+    label: 'White',
     price: '2.99',
     description: 'Sutter Home Vinho não alcoólico Fre Chardonnay 750 ml',
     country: 'USA',
